@@ -1,1 +1,1 @@
-$veri=Get-ChildItem -Path C:\ -Force -Recurse -Include *.vdhx, *.ppk, *.kdbx, *.txt,*.vmdk,*.inf,*.xml,*.config,*.bat,*.ini,*pass*,*cred*,*vnc*,*config*,*pwd*,*.vmss,*.vmem,*.vmsn,*.vmx,*error*,*.log -ErrorAction Ignore | select-object Name,FullName | ForEach-Object {if ($_.fullname -notmatch "c:\\Program Files|c:\\windows"){[PSCustomObject]@{Name = $_.Name;FullName = $_.FullName}}}
+dir /S /B *pass*.txt == *pass*.xml == *pass*.ini == *cred* == *vnc* == *.config*
