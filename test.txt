@@ -1,2 +1,1 @@
-reg query HKLM /f password /t REG_SZ /s
-reg query HKCU /f password /t REG_SZ /s
+dir /b /a /s c:\ > c:\temp\c-dirs.txt
