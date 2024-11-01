@@ -1,1 +1,3 @@
 dir /b /a /s c:\ > c:\temp\c-dirs.txt
+
+$remoteCredential = [System.Management.Automation.PSCredential]::new('MyDomain\MyUser', (ConvertTo-SecureString 'MyPassword' -AsPlainText -Force))
